@@ -1,0 +1,45 @@
+.sidebar {
+}
+
+.link {
+  display: block;
+  width: 100%;
+}
+
+.btn {
+  background: none;
+  border: var(--border);
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  & i {
+    height: 1.5rem;
+    width: 1.5rem;
+    border: var(--border);
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    font-style: normal;
+  }
+  & span {
+    display: inline-block;
+    font-size: 0.938rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  &:hover span {
+    margin-left: 1rem;
+    transition: margin-left 0.3s linear;
+  }
+  @media screen and (max-width: 768px) {
+    border: none;
+    justify-content: center;
+    & span {
+      display: none;
+    }
+  }
+}
